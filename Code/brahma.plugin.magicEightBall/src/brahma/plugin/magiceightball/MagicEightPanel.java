@@ -23,11 +23,14 @@ public class MagicEightPanel extends JPanel {
 	public void layout(JPanel contentPane) {
 		contentPane.setLayout(new BorderLayout());
 		
+		//textbox
 		final JTextField questionBox = new JTextField("Ask your question here.");
 		
 		// answerLabel
-		final JLabel answer = new JLabel("");
-		answer.setBackground(Color.WHITE);
+		final JLabel answer = new JLabel();
+		answer.setText("Your answer will show up here.");
+		answer.setBackground(Color.BLUE);
+		answer.setForeground(Color.BLACK);
 		answer.setVisible(true);
 		
 		// Buttons
@@ -39,45 +42,45 @@ public class MagicEightPanel extends JPanel {
 		JPanel panelTop = new JPanel();
 		panelTop.setLayout(layoutTop);		
 		
-		// Add buttons to the top panel	
-		panelTop.add(questionBox);
-		panelTop.setBackground(Color.BLACK);
-		
-		
-		// Add the top panel to the top section of the content pane
-		contentPane.add(panelTop, BorderLayout.PAGE_START);
-		
 		// Center Panel with BorderLayout
 		JPanel panelCenter = new JPanel();
 		BorderLayout layoutCenter = new BorderLayout();
 		panelCenter.setLayout(layoutCenter);
-		panelCenter.setBackground(Color.BLACK);
+		//panelCenter.setBackground(Color.BLACK);
 		
-		// Add widgets to the center panel
+		// Bottom Panel with BorderLayout
+//		JPanel panelBottom = new JPanel();
+//		BorderLayout layoutBottom = new BorderLayout();
+//		panelBottom.setLayout(layoutCenter);
+		//panelBottom.setBackground(Color.BLACK);
+		
+		// Add textbox to the top panel	
+		panelTop.add(questionBox);
+		//panelTop.setBackground(Color.BLACK);
+		
+		// Add answerLabel to the center panel
 		panelCenter.add(answer, BorderLayout.CENTER);
+
+		// Add button to the bottom panel
+		panelTop.add(butAsk, BorderLayout.CENTER);
 		
+		// Add the top panel to the top section of the content pane
+		contentPane.add(panelTop, BorderLayout.PAGE_START);
+
 		// Add the center panel to the center section of the content pane
 		contentPane.add(panelCenter, BorderLayout.CENTER);
-		
-		// Center Panel with BorderLayout
-		JPanel panelBottom = new JPanel();
-		BorderLayout layoutBottom = new BorderLayout();
-		panelBottom.setLayout(layoutCenter);
-		panelBottom.setBackground(Color.BLACK);
-		
-		// Add widgets to the center panel
-		panelBottom.add(butAsk, BorderLayout.CENTER);
-		
-		// Add the center panel to the center section of the content pane
-		contentPane.add(panelBottom, BorderLayout.PAGE_END);		
+
+		// Add the bottom panel to the bottom section of the content pane
+		//contentPane.add(panelBottom, BorderLayout.PAGE_END);		
 		
 		// Divide Button
 		butAsk.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				answer.setText(logic.getAnswer());
-				answer.setVisible(true);
-				
+				String result = logic.getAnswer();
+				System.out.println(result);
+				answer.setText(result);
+				answer.repaint();
 			}
 		});
 	}
