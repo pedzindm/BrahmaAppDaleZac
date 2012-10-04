@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
-<window height="860" width="800" x="800" y="0">
+<window height="860" width="800" x="1068" y="32">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -17,11 +17,15 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.pde.ui.manifestEditor" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1349316850772" focus="true" label="Workspace - Java">
+<page aggregateWorkingSetId="Aggregate for window 1349316850772" focus="true" label="Workspace - Plug-in Development">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -30,42 +34,55 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.internal.EditorStack@79006d" ratio="0.50553745" ratioLeft="776" ratioRight="759" relationship="2" relative="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Plugin.java" partName="Plugin.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/Plugin.java" title="Plugin.java" tooltip="BrahmaApp/src/plugin/Plugin.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/Plugin.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="348" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MagicEightPlugin.java" partName="MagicEightPlugin.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPlugin.java" title="MagicEightPlugin.java" tooltip="brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPlugin.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPlugin.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="572" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginCore.java" partName="PluginCore.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/PluginCore.java" title="PluginCore.java" tooltip="BrahmaApp/src/plugin/PluginCore.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/PluginCore.java"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MagicEightPanel.java" partName="MagicEightPanel.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPanel.java" title="MagicEightPanel.java" tooltip="brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPanel.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPanel.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2154" selectionTopPixel="175"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MagicEightBallLogic.java" partName="MagicEightBallLogic.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightBallLogic.java" title="MagicEightBallLogic.java" tooltip="brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightBallLogic.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightBallLogic.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="167" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorPlugin.java" partName="CalculatorPlugin.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/Calculator/src/calculator/CalculatorPlugin.java" title="CalculatorPlugin.java" tooltip="calculator/src/calculator/CalculatorPlugin.java" workbook="org.eclipse.ui.internal.EditorStack@79006d">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/calculator/src/calculator/CalculatorPlugin.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginManager.java" partName="PluginManager.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/PluginManager.java" title="PluginManager.java" tooltip="BrahmaApp/src/plugin/PluginManager.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/PluginManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorPanel.java" partName="CalculatorPanel.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/Calculator/src/calculator/CalculatorPanel.java" title="CalculatorPanel.java" tooltip="calculator/src/calculator/CalculatorPanel.java" workbook="org.eclipse.ui.internal.EditorStack@79006d">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/calculator/src/calculator/CalculatorPanel.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="1407" selectionTopPixel="306"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Brahma.java" partName="Brahma.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/Brahma.java" title="Brahma.java" tooltip="BrahmaApp/src/plugin/Brahma.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/Brahma.java"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorLogic.java" partName="CalculatorLogic.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/Calculator/src/calculator/CalculatorLogic.java" title="CalculatorLogic.java" tooltip="calculator/src/calculator/CalculatorLogic.java" workbook="org.eclipse.ui.internal.EditorStack@79006d">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/calculator/src/calculator/CalculatorLogic.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Globals.java" partName="Globals.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/Globals.java" title="Globals.java" tooltip="BrahmaApp/src/plugin/Globals.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/Globals.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WatchDir.java" partName="WatchDir.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/WatchDir.java" title="WatchDir.java" tooltip="BrahmaApp/src/plugin/WatchDir.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/WatchDir.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2140" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
+<viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<expanded>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -105,6 +122,9 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.pde.runtime.LogView" partName="Error Log">
+<viewState activate="true" allSessions="true" column2="300" column3="150" column4="150" error="true" groupBy="0" info="true" limit="50" ok="true" orderType="2" orderValue="-1" show_filter_text="true" useLimit="true" warning="true"/>
+</view>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
 <viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
 <sorter groupBy="CATEGORY_QUERY">
@@ -122,13 +142,17 @@
 <filteredTreeFindHistory/>
 </viewState>
 </view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.pde.ui.PluginsView" partName="Plug-ins">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.pde.ui.PDEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -253,63 +277,278 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.pde.internal.ui.PDEPerspective" id="org.eclipse.pde.ui.PDEPerspective" label="Plug-in Development"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<show_view_action id="net.sourceforge.metrics.ui.MetricsView"/>
+<show_view_action id="net.sourceforge.metrics.ui.layeredpackagegraph.LayeredPackageTableView"/>
+<show_view_action id="org.eclipse.jdt.ui.PackagesView"/>
+<show_view_action id="org.eclipse.pde.ui.PluginsView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<new_wizard_action id="org.eclipse.pde.ds.ui.wizard"/>
+<new_wizard_action id="org.eclipse.pde.ui.NewProductConfigurationWizard"/>
+<new_wizard_action id="org.eclipse.pde.ui.NewProfileWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.pde.ui.PluginsView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@7ae160" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="bottomRight" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.pde.runtime.LogView" ratio="0.3"/>
+<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+<view id="org.eclipse.jdt.junit.ResultView" ratio="0.4"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@1bb3b50" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.22733612"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.pde.ui.PluginsView" label="Plug-ins"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1bb3b50" ratio="0.7496689" ratioLeft="566" ratioRight="189" relationship="4" relative="topLeft">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1194" ratioRight="398" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="398" ratioRight="1194" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottomRight" ratio="0.7496689" ratioLeft="566" ratioRight="189" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7ae160" ratio="0.7495812" ratioLeft="895" ratioRight="299" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPlugin.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPanel.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightBallLogic.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" path="/brahma.plugin.magicEightBall/META-INF/MANIFEST.MF"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/calculator/src/calculator/CalculatorPlugin.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/WatchDir.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/Brahma.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/Globals.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPlugin.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/calculator/src/calculator/CalculatorPlugin.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/calculator/src/calculator/CalculatorPanel.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/calculator/src/calculator/CalculatorLogic.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/Plugin.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/PluginCore.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/PluginManager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/WatchDir.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/Brahma.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/WatchDir.java"/>
 </editors>
-<item historyLabel="Brahma.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="CalculatorPlugin.java" index="4">
+<position info="not_deleted" x="240" y="53"/>
 </item>
-<item historyLabel="Globals.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="MagicEightPlugin.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
 </item>
-<item historyLabel="Plugin.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="CalculatorPlugin.java" index="4">
+<position info="not_deleted" x="240" y="53"/>
 </item>
-<item historyLabel="PluginCore.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="MagicEightPlugin.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
 </item>
-<item historyLabel="PluginManager.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="CalculatorPlugin.java" index="4">
+<position info="not_deleted" x="240" y="53"/>
+</item>
+<item historyLabel="MagicEightPlugin.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="CalculatorPlugin.java" index="4">
+<position info="not_deleted" x="240" y="53"/>
+</item>
+<item historyLabel="MagicEightPlugin.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="CalculatorPlugin.java" index="4">
+<position info="not_deleted" x="240" y="53"/>
+</item>
+<item historyLabel="MagicEightPlugin.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="CalculatorPlugin.java" index="4">
+<position info="not_deleted" x="240" y="53"/>
+</item>
+<item historyLabel="MagicEightPlugin.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="CalculatorPlugin.java" index="4">
+<position info="not_deleted" x="240" y="53"/>
+</item>
+<item historyLabel="MagicEightPlugin.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="MagicEightBallLogic.java" index="2">
+<position info="not_deleted" x="398" y="0"/>
+</item>
+<item historyLabel="MagicEightPlugin.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
 </item>
 <item historyLabel="WatchDir.java" index="5">
-<position info="not_deleted" x="2225" y="0"/>
+<position info="not_deleted" x="659" y="0"/>
 </item>
-<item historyLabel="Globals.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="WatchDir.java" index="5">
-<position info="not_deleted" x="2187" y="0"/>
-</item>
-<item historyLabel="PluginManager.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PluginCore.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Plugin.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="MagicEightPlugin.java" index="0">
+<position info="not_deleted" x="369" y="0"/>
 </item>
 <item historyLabel="Brahma.java" index="6">
+<position info="not_deleted" x="461" y="0"/>
+</item>
+<item historyLabel="CalculatorPlugin.java" index="4">
+<position info="not_deleted" x="240" y="53"/>
+</item>
+<item historyLabel="brahma.plugin.magicEightBall" index="3"/>
+<item historyLabel="MagicEightPlugin.java" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Globals.java" index="1">
+<item historyLabel="CalculatorPlugin.java" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Plugin.java" index="2">
+<item historyLabel="CalculatorPanel.java" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="WatchDir.java" index="7">
-<position info="not_deleted" x="3" y="0"/>
+<item historyLabel="MagicEightPlugin.java" index="7">
+<position info="not_deleted" x="257" y="0"/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position info="not_deleted" x="368" y="0"/>
+</item>
+<item historyLabel="CalculatorPanel.java" index="9">
+<position info="not_deleted" x="23" y="0"/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position info="not_deleted" x="590" y="0"/>
+</item>
+<item historyLabel="CalculatorPanel.java" index="9">
+<position info="not_deleted" x="572" y="0"/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position info="not_deleted" x="617" y="0"/>
+</item>
+<item historyLabel="CalculatorPanel.java" index="9">
+<position info="not_deleted" x="518" y="0"/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position info="not_deleted" x="428" y="0"/>
+</item>
+<item historyLabel="MagicEightBallLogic.java" index="2">
+<position info="not_deleted" x="199" y="0"/>
+</item>
+<item historyLabel="CalculatorLogic.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MagicEightBallLogic.java" index="2">
+<position info="not_deleted" x="167" y="0"/>
+</item>
+<item historyLabel="MagicEightPlugin.java" index="7">
+<position info="not_deleted" x="257" y="0"/>
+</item>
+<item historyLabel="Plugin.java" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MagicEightPlugin.java" index="7">
+<position info="not_deleted" x="257" y="0"/>
+</item>
+<item historyLabel="CalculatorPlugin.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MagicEightPlugin.java" index="7">
+<position info="not_deleted" x="572" y="0"/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position info="not_deleted" x="428" y="0"/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position info="not_deleted" x="2106" y="0"/>
+</item>
+<item historyLabel="CalculatorPlugin.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position/>
+</item>
+<item historyLabel="CalculatorPanel.java" index="9">
+<position info="not_deleted" x="518" y="0"/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position info="not_deleted" x="2525" y="0"/>
+</item>
+<item historyLabel="MagicEightPanel.java" index="1">
+<position info="not_deleted" x="2078" y="0"/>
+</item>
+<item historyLabel="CalculatorPanel.java" index="9">
+<position info="not_deleted" x="1407" y="8"/>
+</item>
+<item active="true" historyLabel="MagicEightPanel.java" index="1">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -317,6 +556,14 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="bottomRight"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@7ae160"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -324,27 +571,55 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1bb3b50"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Plugin.java" tooltip="BrahmaApp/src/plugin/Plugin.java">
+<persistable path="/BrahmaApp/src/plugin/Plugin.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorLogic.java" tooltip="calculator/src/calculator/CalculatorLogic.java">
+<persistable path="/calculator/src/calculator/CalculatorLogic.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MagicEightBallLogic.java" tooltip="brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightBallLogic.java">
+<persistable path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightBallLogic.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MagicEightPanel.java" tooltip="brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPanel.java">
+<persistable path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPanel.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorPanel.java" tooltip="calculator/src/calculator/CalculatorPanel.java">
+<persistable path="/calculator/src/calculator/CalculatorPanel.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorPlugin.java" tooltip="calculator/src/calculator/CalculatorPlugin.java">
+<persistable path="/calculator/src/calculator/CalculatorPlugin.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MagicEightPlugin.java" tooltip="brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPlugin.java">
+<persistable path="/brahma.plugin.magicEightBall/src/brahma/plugin/magiceightball/MagicEightPlugin.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" name="plugin.xml" tooltip="MagicEightBall/plugin.xml">
+<persistable path="/MagicEightBall/plugin.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" name="MANIFEST.MF" tooltip="brahma.plugin.magicEightBall/META-INF/MANIFEST.MF">
+<persistable path="/brahma.plugin.magicEightBall/META-INF/MANIFEST.MF"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" name="MANIFEST.MF" tooltip="MagicEightBall/META-INF/MANIFEST.MF">
+<persistable path="/MagicEightBall/META-INF/MANIFEST.MF"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" name="MANIFEST.MF" tooltip="calculator/META-INF/MANIFEST.MF">
+<persistable path="/calculator/META-INF/MANIFEST.MF"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WatchDir.java" tooltip="BrahmaApp/src/plugin/WatchDir.java">
 <persistable path="/BrahmaApp/src/plugin/WatchDir.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginManager.java" tooltip="BrahmaApp/src/plugin/PluginManager.java">
+<persistable path="/BrahmaApp/src/plugin/PluginManager.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Globals.java" tooltip="BrahmaApp/src/plugin/Globals.java">
 <persistable path="/BrahmaApp/src/plugin/Globals.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Brahma.java" tooltip="BrahmaApp/src/plugin/Brahma.java">
 <persistable path="/BrahmaApp/src/plugin/Brahma.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginManager.java" tooltip="BrahmaApp/src/plugin/PluginManager.java">
-<persistable path="/BrahmaApp/src/plugin/PluginManager.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginCore.java" tooltip="BrahmaApp/src/plugin/PluginCore.java">
-<persistable path="/BrahmaApp/src/plugin/PluginCore.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Plugin.java" tooltip="BrahmaApp/src/plugin/Plugin.java">
-<persistable path="/BrahmaApp/src/plugin/Plugin.java"/>
 </file>
 </mruList>
 </workbench>

@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Plugin-Class: calculator.CalculatorPlugin
-Bundle-ManifestVersion: 2
-Bundle-Name: MagicEightBall
-Bundle-SymbolicName: magicEightBall

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="420" class="edu.rosehulman.chat.ChatPlugin" localization="OSGI-INF/l10n/bundle" name="Chat" project="edu.rosehulman.chat" provider="Chandan Raj Rupakheti"/>
+	<bundle bundleID="414" class="calculator.CalculatorPlugin" localization="OSGI-INF/l10n/bundle" name="Calculator Extension" project="calculator" provider="Pedzinski and Reynolds"/>
+	<bundle bundleID="417" class="brahma.plugin.magiceightball.MagicEightPlugin" localization="OSGI-INF/l10n/bundle" name="MagicEightBall" project="brahma.plugin.magicEightBall" provider="Pedzinski and Reynolds"/>
+</map>
