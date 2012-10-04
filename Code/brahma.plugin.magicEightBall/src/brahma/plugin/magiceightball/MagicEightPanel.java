@@ -15,6 +15,11 @@ public class MagicEightPanel extends JPanel {
 
 	MagicEightBallLogic logic = new MagicEightBallLogic();
 	
+	public MagicEightPanel(){
+		layout(this);
+		
+	}
+	
 	public void layout(JPanel contentPane) {
 		contentPane.setLayout(new BorderLayout());
 		
@@ -22,11 +27,12 @@ public class MagicEightPanel extends JPanel {
 		
 		// answerLabel
 		final JLabel answer = new JLabel("");
-		answer.setBackground(Color.BLUE);
+		answer.setBackground(Color.WHITE);
+		answer.setVisible(true);
 		
 		// Buttons
 		JButton butAsk = new JButton("Ask");	
-		butAsk.setBackground(Color.GRAY);
+		butAsk.setBackground(Color.WHITE);
 		
 		// Top Panel with table like layout (grid layout)
 		GridLayout layoutTop = new GridLayout(4,4);
@@ -70,6 +76,8 @@ public class MagicEightPanel extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				answer.setText(logic.getAnswer());
+				answer.setVisible(true);
+				
 			}
 		});
 	}

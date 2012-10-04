@@ -4,18 +4,16 @@ import java.awt.BorderLayout;
 
 import javax.swing.JPanel;
 
-import org.eclipse.ui.plugin.AbstractUIPlugin;
-import org.osgi.framework.BundleContext;
-
 import plugin.Plugin;
 
 /**
  * The activator class controls the plug-in life cycle
  */
 public class MagicEightPlugin extends Plugin {
-
 	JPanel panel;
-	public MagicEightPlugin(String id) {
+	private static final String id = "Eight Ball Plugin";
+	
+	public MagicEightPlugin() {
 		super(id);
 	}
 

@@ -4,10 +4,9 @@ import java.util.ArrayList;
 
 public class MagicEightBallLogic {
 
-	ArrayList<String> answers;
+	ArrayList<String> answers  = new ArrayList<String>();
 	
 	public MagicEightBallLogic(){
-		answers = new ArrayList<String>();
 		answers.add("It is certain.");
 		answers.add("It is decidedly so.");
 		answers.add("Without a doubt.");

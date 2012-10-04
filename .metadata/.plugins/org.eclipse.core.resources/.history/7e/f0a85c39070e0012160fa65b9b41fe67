@@ -1,0 +1,16 @@
+package brahma2;
+
+import plugin.PluginCore;
+
+public class Brahma2Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Brahma2Main ui = new Brahma2Main();
+		ui.start();
+
+	}
+
+}

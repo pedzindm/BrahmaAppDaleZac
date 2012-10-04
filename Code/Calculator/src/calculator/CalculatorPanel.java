@@ -5,33 +5,22 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 
 public class CalculatorPanel extends JPanel {
 	
 	CalculatorLogic logic = new CalculatorLogic();	
+	JLabel answer = new JLabel("Answer");
 	public CalculatorPanel() {
 		
 		layout(this);
 	}
 	public void layout(JPanel contentPane) {
 		contentPane.setLayout(new BorderLayout());
-		// Labels used
-		JLabel lblName = new JLabel("Name");
-		JLabel lblAddress = new JLabel("Address");
-		JLabel lblInterest = new JLabel("Interest");
-		JLabel lblBio = new JLabel("Biography");
-		JLabel equation = new JLabel("");
-		
-		
 		// answerLabel
-		final JLabel answer = new JLabel("Answer");
+		
 		answer.setBackground(Color.YELLOW);
 		
 		// Buttons
@@ -58,27 +47,7 @@ public class CalculatorPanel extends JPanel {
 		JPanel panelTop = new JPanel();
 		panelTop.setLayout(layoutTop);		
 		
-		// Add buttons to the top panel	
-		panelTop.add(butSeven); 
-		panelTop.add(butEight); 
-		panelTop.add(butNine);
-		panelTop.add(butDiv); // First row
-		panelTop.add(butFour); 
-		panelTop.add(butFive); 
-		panelTop.add(butSix);
-		panelTop.add(butMult); // Second row
-		panelTop.add(butOne); 
-		panelTop.add(butTwo); 
-		panelTop.add(butThree);
-		panelTop.add(butSub); // Third row
-		panelTop.add(butZero); 
-		panelTop.add(butAdd);
-		panelTop.add(butClear); 
-		panelTop.add(butEnter);// Fourth row
-		
-		
-		// Add the top panel to the top section of the content pane
-		contentPane.add(panelTop, BorderLayout.PAGE_START);
+
 		
 		// Center Panel with BorderLayout
 		JPanel panelCenter = new JPanel();
@@ -97,18 +66,21 @@ public class CalculatorPanel extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// Clear things
-				answer.setText("");
+				answer.setText("Answer");
+				answer.setVisible(true);
 				logic.clearAll();
 			}
 		});
 		
-		// Clear button
-		butClear.addActionListener(new ActionListener() {
+		// enter button
+		butEnter.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// Clear things
 				String result = logic.sendEnterSignal();
+			    System.out.print(result);
 				answer.setText(result);
+				logic.clearAll();
 			}
 		});
 		
@@ -146,7 +118,7 @@ public class CalculatorPanel extends JPanel {
 		
 		
 		
-		// Divide Button
+		// 0 Button
 		butZero.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -155,7 +127,7 @@ public class CalculatorPanel extends JPanel {
 				
 		});
 		
-		// Divide Button
+		// 1 Button
 		butOne.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -163,15 +135,15 @@ public class CalculatorPanel extends JPanel {
 			}
 		});
 		
-		// Divide Button
+		// 2 Button
 		butTwo.addActionListener(new ActionListener() {
-				@Override
-				public void actionPerformed(ActionEvent e) {
-					logic.sendSignal('n', 2);
-				}
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				logic.sendSignal('n', 2);
+			}
 		});
 		
-		// Divide Button
+		// 3 Button
 		butThree.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -179,7 +151,7 @@ public class CalculatorPanel extends JPanel {
 			}
 		});
 		
-		// Divide Button
+		// 4 Button
 		butFour.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -187,7 +159,7 @@ public class CalculatorPanel extends JPanel {
 			}
 		});
 		
-		// Divide Button
+		// 5 Button
 		butFive.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -195,7 +167,7 @@ public class CalculatorPanel extends JPanel {
 			}
 		});
 		
-		// Divide Button
+		// 6 Button
 		butSix.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -203,7 +175,7 @@ public class CalculatorPanel extends JPanel {
 			}
 		});
 		
-		// Divide Button
+		// 7 Button
 		butSeven.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -211,7 +183,7 @@ public class CalculatorPanel extends JPanel {
 			}
 		});
 		
-		// Divide Button
+		// 8 Button
 		butEight.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -219,12 +191,33 @@ public class CalculatorPanel extends JPanel {
 			}
 		});
 		
-		// Divide Button
+		// 9 Button
 		butNine.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				logic.sendSignal('n', 9);
 			}
 		});
+		// Add buttons to the top panel	
+		panelTop.add(butSeven); 
+		panelTop.add(butEight); 
+		panelTop.add(butNine);
+		panelTop.add(butDiv); // First row
+		panelTop.add(butFour); 
+		panelTop.add(butFive); 
+		panelTop.add(butSix);
+		panelTop.add(butMult); // Second row
+		panelTop.add(butOne); 
+		panelTop.add(butTwo); 
+		panelTop.add(butThree);
+		panelTop.add(butSub); // Third row
+		panelTop.add(butZero); 
+		panelTop.add(butAdd);
+		panelTop.add(butClear); 
+		panelTop.add(butEnter);// Fourth row
+		
+		
+		// Add the top panel to the top section of the content pane
+		contentPane.add(panelTop, BorderLayout.PAGE_START);
 	}
 }

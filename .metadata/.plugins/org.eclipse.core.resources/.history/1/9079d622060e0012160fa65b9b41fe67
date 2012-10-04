@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Plugin-Class: brahma.plugin.magiceightball.MagicEightPlugin
+Bundle-ManifestVersion: 2
+Bundle-Name: MagicEightBall
+Bundle-SymbolicName: brahma.plugin.magicEightBall;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: brahma.plugin.magiceightball.MagicEightPlugin
+Bundle-Vendor: Pedzinski and Reynolds
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.junit
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
