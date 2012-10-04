@@ -1,0 +1,18 @@
+!SESSION 2012-10-03 22:13:33.005 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-10-03 22:14:13.037
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-10-03 23:17:02.265 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-10-03 23:17:15.471
+!MESSAGE No search provider was registed. Tasks search is not available.
