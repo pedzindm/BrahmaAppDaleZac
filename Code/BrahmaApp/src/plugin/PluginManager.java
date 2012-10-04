@@ -6,22 +6,18 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.jar.Attributes;
 import java.util.jar.JarFile;
 import java.util.jar.Manifest;
 
-import javax.swing.DefaultListModel;
-
 public class PluginManager implements Runnable {
+	private PluginCore core;
 	private WatchDir watchDir;
 	private HashMap<Path, Plugin> pathToPlugin;
 
-
-	public PluginManager() throws IOException {
-	
+	public PluginManager(PluginCore core) throws IOException {
+		this.core = core;
 		this.pathToPlugin = new HashMap<Path, Plugin>();
 		watchDir = new WatchDir(this, FileSystems.getDefault().getPath("plugins"), false);
 	}
@@ -47,7 +43,6 @@ public class PluginManager implements Runnable {
 		watchDir.processEvents();
 	}
 
-	
 	void loadBundle(Path bundlePath) throws Exception {
 		// Get hold of the jar file
 		File jarBundle = bundlePath.toFile();
@@ -65,19 +60,17 @@ public class PluginManager implements Runnable {
         
         // Create a new instance of the plugin class and add to the core
         Plugin plugin = (Plugin)pluginClass.newInstance();
-        Globals.list.add(plugin);
+        this.core.addPlugin(plugin);
         this.pathToPlugin.put(bundlePath, plugin);
 
         // Release the jar resources
         jarFile.close();
-		
 	}
 	
 	void unloadBundle(Path bundlePath) {
 		Plugin plugin = this.pathToPlugin.remove(bundlePath);
 		if(plugin != null) {
-			//this.core.removePlugin(plugin.getId());
-			Globals.list.remove(Globals.list.indexOf(plugin));
+			this.core.removePlugin(plugin.getId());
 		}
 	}
 }

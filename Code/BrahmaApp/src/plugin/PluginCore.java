@@ -5,7 +5,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.util.HashMap;
-import java.util.List;
 
 import javax.swing.*;
 import javax.swing.event.ListSelectionEvent;
@@ -24,6 +23,8 @@ public class PluginCore {
 	private HashMap<String, Plugin> idToPlugin;
 	private Plugin currentPlugin;
 	
+	// Plugin manager
+	PluginManager pluginManager;
 	
 	public PluginCore() {
 		idToPlugin = new HashMap<String, Plugin>();
@@ -95,17 +96,14 @@ public class PluginCore {
 		});
 		
 		// Start the plugin manager now that the core is ready
-//		try {
-//			this.pluginManager = new PluginManager(this);
-//		}
-//		catch(Exception e) {
-//			e.printStackTrace();
-//		}
-		for(Plugin p :Globals.list){
-			this.addPlugin(p);
-			
+		try {
+			this.pluginManager = new PluginManager(this);
 		}
-
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		Thread thread = new Thread(this.pluginManager);
+		thread.start();
 	}
 	
 	public void start() {
@@ -117,7 +115,7 @@ public class PluginCore {
 			}
 		});
 	}
-	 
+	
 	public void stop() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run()
