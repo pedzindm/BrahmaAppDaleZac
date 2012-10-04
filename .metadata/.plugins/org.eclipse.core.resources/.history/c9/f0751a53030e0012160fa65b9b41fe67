@@ -1,0 +1,27 @@
+package calculator.tests;
+
+
+import org.junit.Test;
+
+import calculator.CalculatorLogic;
+
+import static org.junit.Assert.assertEquals;
+
+public class ClearInfoTest {
+
+	CalculatorLogic logic = new CalculatorLogic();
+	
+	@Test
+	public void testClear()
+	{
+		logic.sendSignal('n', 2);
+		logic.sendSignal('+', 0);
+		logic.sendSignal('n', 3);
+		
+		logic.clearAll();
+		assertEquals(logic.first, 0);
+		assertEquals(logic.second, 0);
+		assertEquals(logic.operator, 'o');
+	}
+
+}

@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
-<window height="768" width="1024" x="150" y="92">
+<window height="860" width="800" x="800" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="171" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -24,10 +26,41 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Plugin.java" partName="Plugin.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/Plugin.java" title="Plugin.java" tooltip="BrahmaApp/src/plugin/Plugin.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/Plugin.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="348" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginCore.java" partName="PluginCore.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/PluginCore.java" title="PluginCore.java" tooltip="BrahmaApp/src/plugin/PluginCore.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/PluginCore.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginManager.java" partName="PluginManager.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/PluginManager.java" title="PluginManager.java" tooltip="BrahmaApp/src/plugin/PluginManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/PluginManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Brahma.java" partName="Brahma.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/Brahma.java" title="Brahma.java" tooltip="BrahmaApp/src/plugin/Brahma.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/Brahma.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Globals.java" partName="Globals.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/Globals.java" title="Globals.java" tooltip="BrahmaApp/src/plugin/Globals.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/Globals.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WatchDir.java" partName="WatchDir.java" path="C:/Users/pedzindm/Documents/GitHub/BrahmaAppDaleZac/Code/BrahmaApp/src/plugin/WatchDir.java" title="WatchDir.java" tooltip="BrahmaApp/src/plugin/WatchDir.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/BrahmaApp/src/plugin/WatchDir.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2140" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
@@ -39,6 +72,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1349316850772">
@@ -152,6 +188,7 @@
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <fastViewBars/>
@@ -178,23 +215,24 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.68484044" ratioLeft="515" ratioRight="237" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1c70651" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1c70651" ratio="0.8203593" ratioLeft="1096" ratioRight="240" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.mylyn.tasks.ui.views.tasks" appearance="2" expanded="2">
 <page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -217,7 +255,63 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/Brahma.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/Globals.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/Plugin.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/PluginCore.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/PluginManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/WatchDir.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/Brahma.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BrahmaApp/src/plugin/WatchDir.java"/>
+</editors>
+<item historyLabel="Brahma.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Globals.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Plugin.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PluginCore.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PluginManager.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="WatchDir.java" index="5">
+<position info="not_deleted" x="2225" y="0"/>
+</item>
+<item historyLabel="Globals.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="WatchDir.java" index="5">
+<position info="not_deleted" x="2187" y="0"/>
+</item>
+<item historyLabel="PluginManager.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PluginCore.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Plugin.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Brahma.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Globals.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Plugin.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="WatchDir.java" index="7">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -233,5 +327,24 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WatchDir.java" tooltip="BrahmaApp/src/plugin/WatchDir.java">
+<persistable path="/BrahmaApp/src/plugin/WatchDir.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Globals.java" tooltip="BrahmaApp/src/plugin/Globals.java">
+<persistable path="/BrahmaApp/src/plugin/Globals.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Brahma.java" tooltip="BrahmaApp/src/plugin/Brahma.java">
+<persistable path="/BrahmaApp/src/plugin/Brahma.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginManager.java" tooltip="BrahmaApp/src/plugin/PluginManager.java">
+<persistable path="/BrahmaApp/src/plugin/PluginManager.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PluginCore.java" tooltip="BrahmaApp/src/plugin/PluginCore.java">
+<persistable path="/BrahmaApp/src/plugin/PluginCore.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Plugin.java" tooltip="BrahmaApp/src/plugin/Plugin.java">
+<persistable path="/BrahmaApp/src/plugin/Plugin.java"/>
+</file>
+</mruList>
 </workbench>

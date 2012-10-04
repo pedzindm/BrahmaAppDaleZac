@@ -1,0 +1,7 @@
+INDEX VERSION 1.126+C:\Users\pedzindm\Documents\GitHub\BrahmaAppDaleZac\.metadata\.plugins\org.eclipse.jdt.core
+652578585.index
+3738175163.index
+515463390.index
+2073015581.index
+2731420382.index
+1393225683.index

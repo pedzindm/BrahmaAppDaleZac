@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Plugin-Class: calculator.CalculatorPlugin
+Bundle-ManifestVersion: 2
+Bundle-Name: Calculator Extension
+Bundle-SymbolicName: cExtension;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: calculator.CalculatorPlugin
+Bundle-Vendor: Reynolds
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ Brahma;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: junit.framework,
+ org.junit

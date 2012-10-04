@@ -1,0 +1,42 @@
+package brahma.plugin.magiceightball.tests;
+
+import java.util.ArrayList;
+
+import org.junit.Test;
+
+import brahma.plugin.magiceightball.MagicEightBallLogic;
+import junit.framework.TestCase;
+
+public class getAnswerTest extends TestCase {
+
+	@Test
+	public void testGetAnswer()
+	{
+		MagicEightBallLogic logic = new MagicEightBallLogic();
+		ArrayList<String> test = new ArrayList<String>();
+		test.add("It is certain.");
+		test.add("It is decidedly so.");
+		test.add("Without a doubt.");
+		test.add("Yes - definitely.");
+		test.add("You may rely on it.");
+		test.add("As I see it, yes.");
+		test.add("Most Likely.");
+		test.add("Yes.");
+		test.add("Reply hazy, try again.");
+		test.add("Ask again later.");
+		test.add("Better not tell you now.");
+		test.add("Cannot predict now.");
+		test.add("Concentrate and ask again.");
+		test.add("Don't count on it.");
+		test.add("My reply is no.");
+		test.add("My sources say no.");
+		test.add("Outlook not so good.");
+		test.add("Very Doubtful.");
+		test.add("No.");
+		test.add("Yes... I mean no.... Oh who am I kidding, I don't have a clue");
+		
+		for (int x = 0; x<100;x++){
+			assertTrue(test.contains(logic.getAnswer()));
+		}
+	}
+}

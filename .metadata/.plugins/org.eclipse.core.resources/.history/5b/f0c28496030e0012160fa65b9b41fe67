@@ -1,0 +1,68 @@
+package calculator;
+
+public class CalculatorLogic {
+	
+	public double first = 0, second = 0;
+	public char operator = 'o';
+	
+	public CalculatorLogic(){
+		
+	}
+	
+	public void sendSignal(char type, int num){
+		if(type == 'n'){
+			if(operator == 'o')	{
+				first*=10;
+				first+=num;
+			}
+			else{
+				second*=10;
+				second+=num;
+			}			
+		}
+		else{
+			operator = type;
+		}
+	}
+	
+	public void clearAll()
+	{
+		first = 0;
+		second =0;
+		operator = 'o';
+	}
+	
+	public String add(double firstNum, double secondNum)
+	{
+		return (firstNum + secondNum)+""; 
+	}
+	
+	protected String subtract(double firstNum, double secondNum)
+	{
+		return (firstNum - secondNum)+""; 
+	}
+	
+	public String multiply(double firstNum, double secondNum)
+	{
+		return (firstNum * secondNum)+""; 
+	}
+	
+	public String divide(double firstNum, double secondNum)
+	{
+		if(secondNum != 0)
+			return (firstNum / secondNum)+"";
+		else return "Cannot Divide by 0";
+	}
+	
+	public String sendEnterSignal(){
+		
+		switch(this.operator){
+			case '+':	return add(first, second);
+			case '-':	return subtract(first, second);
+			case '*':	return multiply(first, second);
+			case '/':	return divide(first, second);
+			default:	return ""+first;
+		}
+	}
+	
+}

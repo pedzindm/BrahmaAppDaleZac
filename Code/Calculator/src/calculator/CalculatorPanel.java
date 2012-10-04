@@ -15,10 +15,11 @@ import javax.swing.JTextField;
 
 public class CalculatorPanel extends JPanel {
 	
-	double num = 0;
-	char op = 'n';
-	
-
+	CalculatorLogic logic = new CalculatorLogic();	
+	public CalculatorPanel() {
+		
+		layout(this);
+	}
 	public void layout(JPanel contentPane) {
 		contentPane.setLayout(new BorderLayout());
 		// Labels used
@@ -49,7 +50,7 @@ public class CalculatorPanel extends JPanel {
 		JButton butSeven = new JButton("7");
 		JButton butEight = new JButton("8");
 		JButton butNine = new JButton("9");
-		JButton butDecimal = new JButton(".");
+		JButton butEnter = new JButton("Enter");
 		
 		
 		// Top Panel with table like layout (grid layout)
@@ -57,7 +58,7 @@ public class CalculatorPanel extends JPanel {
 		JPanel panelTop = new JPanel();
 		panelTop.setLayout(layoutTop);		
 		
-		// Add widgets to the top panel	
+		// Add buttons to the top panel	
 		panelTop.add(butSeven); 
 		panelTop.add(butEight); 
 		panelTop.add(butNine);
@@ -72,7 +73,8 @@ public class CalculatorPanel extends JPanel {
 		panelTop.add(butSub); // Third row
 		panelTop.add(butZero); 
 		panelTop.add(butAdd);
-		panelTop.add(butClear); // Fourth row
+		panelTop.add(butClear); 
+		panelTop.add(butEnter);// Fourth row
 		
 		
 		// Add the top panel to the top section of the content pane
@@ -96,8 +98,17 @@ public class CalculatorPanel extends JPanel {
 			public void actionPerformed(ActionEvent arg0) {
 				// Clear things
 				answer.setText("");
-				num = 0;
-				op = 'n';
+				logic.clearAll();
+			}
+		});
+		
+		// Clear button
+		butClear.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// Clear things
+				String result = logic.sendEnterSignal();
+				answer.setText(result);
 			}
 		});
 		
@@ -105,7 +116,7 @@ public class CalculatorPanel extends JPanel {
 		butAdd.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				op = '+';
+				logic.sendSignal('+', 0);
 			}
 		});
 		
@@ -113,23 +124,23 @@ public class CalculatorPanel extends JPanel {
 		butSub.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				op = '-';
+				logic.sendSignal('-', 0);
 			}
 		});
 		
 		// Multiply Button
-		butSub.addActionListener(new ActionListener() {
+		butMult.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				op = '*';
+				logic.sendSignal('*', 0);
 			}
 		});
 		
 		// Divide Button
-		butSub.addActionListener(new ActionListener() {
+		butDiv.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				op = '/';
+				logic.sendSignal('/', 0);
 			}
 		});
 		
@@ -139,51 +150,16 @@ public class CalculatorPanel extends JPanel {
 		butZero.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// For showing html view
-				final JFrame browserFrame = new JFrame("Error");
-				browserFrame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
-				final JPanel panelBrowser = (JPanel)browserFrame.getContentPane();
-				final JLabel lblBrowser = new JLabel();
-				panelBrowser.add(lblBrowser, BorderLayout.CENTER);
-
-				if(op == 'n')
-					num = '0';
-				else
-					switch(op) {
-						case '+':	num = num+=0;
-						case '-':	num = num-+0;
-						case '*':	num = 0;
-						case '/':	String html = "<html>" +
-												  "<body>" +
-												  "<table>" +
-												  "<tr><td>Cannot Divide by 0</td><td>" +
-												  "<table>" +
-												  "</body>" +
-												  "</html>";
-									lblBrowser.setText(html);
-									browserFrame.pack();
-									browserFrame.setVisible(true);
-						default:
-							num = '0';									
-					}
+				logic.sendSignal('n', 0);
 			}
+				
 		});
 		
 		// Divide Button
 		butOne.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(op == 'n')
-					num = '1';
-				else
-					switch(op) {
-						case '+':	num = num+=1;
-						case '-':	num = num-+1;
-						case '*':	break;
-						case '/':	break;
-						default:
-							num = '1';									
-					}
+				logic.sendSignal('n', 1);
 			}
 		});
 		
@@ -191,17 +167,7 @@ public class CalculatorPanel extends JPanel {
 		butTwo.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					if(op == 'n')
-						num = '2';
-					else
-						switch(op) {
-							case '+':	num = num+=2;
-							case '-':	num = num-+2;
-							case '*':	num = num*=2;
-							case '/':	num = num/=2;
-							default:
-								num = '2';									
-						}
+					logic.sendSignal('n', 2);
 				}
 		});
 		
@@ -209,17 +175,7 @@ public class CalculatorPanel extends JPanel {
 		butThree.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(op == 'n')
-					num = '3';
-				else
-					switch(op) {
-						case '+':	num = num+=3;
-						case '-':	num = num-+3;
-						case '*':	num = num*=3;
-						case '/':	num = num/=3;
-						default:
-							num = '3';									
-					}
+				logic.sendSignal('n', 3);
 			}
 		});
 		
@@ -227,17 +183,7 @@ public class CalculatorPanel extends JPanel {
 		butFour.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(op == 'n')
-					num = '4';
-				else
-					switch(op) {
-						case '+':	num = num+=4;
-						case '-':	num = num-+4;
-						case '*':	num = num*=4;
-						case '/':	num = num/=4;
-						default:
-							num = '4';									
-					}
+				logic.sendSignal('n', 4);
 			}
 		});
 		
@@ -245,17 +191,7 @@ public class CalculatorPanel extends JPanel {
 		butFive.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(op == 'n')
-					num = '5';
-				else
-					switch(op) {
-						case '+':	num = num+=5;
-						case '-':	num = num-+5;
-						case '*':	num = num*=5;
-						case '/':	num = num/=5;
-						default:
-							num = '5';									
-					}
+				logic.sendSignal('n', 5);
 			}
 		});
 		
@@ -263,17 +199,7 @@ public class CalculatorPanel extends JPanel {
 		butSix.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(op == 'n')
-					num = '6';
-				else
-					switch(op) {
-						case '+':	num = num+=6;
-						case '-':	num = num-+6;
-						case '*':	num = num*=6;
-						case '/':	num = num/=6;
-						default:
-							num = '6';									
-					}
+				logic.sendSignal('n', 6);
 			}
 		});
 		
@@ -281,17 +207,7 @@ public class CalculatorPanel extends JPanel {
 		butSeven.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(op == 'n')
-					num = '7';
-				else
-					switch(op) {
-						case '+':	num = num+=7;
-						case '-':	num = num-+7;
-						case '*':	num = num*=7;
-						case '/':	num = num/=7;
-						default:
-							num = '7';									
-					}
+				logic.sendSignal('n', 7);
 			}
 		});
 		
@@ -299,17 +215,7 @@ public class CalculatorPanel extends JPanel {
 		butEight.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(op == 'n')
-					num = '8';
-				else
-					switch(op) {
-						case '+':	num = num+=8;
-						case '-':	num = num-+8;
-						case '*':	num = num*=8;
-						case '/':	num = num/=8;
-						default:
-							num = '8';									
-					}
+				logic.sendSignal('n', 8);
 			}
 		});
 		
@@ -317,17 +223,7 @@ public class CalculatorPanel extends JPanel {
 		butNine.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if(op == 'n')
-					num = '9';
-				else
-					switch(op) {
-						case '+':	num = num+=9;
-						case '-':	num = num-+9;
-						case '*':	num = num*=9;
-						case '/':	num = num/=9;
-						default:
-							num = '9';									
-					}
+				logic.sendSignal('n', 9);
 			}
 		});
 	}

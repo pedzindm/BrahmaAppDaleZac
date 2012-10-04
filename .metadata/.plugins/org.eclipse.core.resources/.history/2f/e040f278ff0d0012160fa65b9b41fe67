@@ -1,0 +1,12 @@
+
+Plugin-Class: calculator.CalculatorPlugin
+Bundle-ManifestVersion: 2
+Bundle-Name: Calculator Extension
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: calculator.CalculatorPlugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: junit.framework,
+ org.junit
+Export-Package: calculator;uses:="javax.swing",
+ calculator.tests;uses:="junit.framework,calculator"

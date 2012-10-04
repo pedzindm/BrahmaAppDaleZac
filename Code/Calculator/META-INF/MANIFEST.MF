@@ -1,3 +1,15 @@
 Manifest-Version: 1.0
 Plugin-Class: calculator.CalculatorPlugin
-
+Bundle-ManifestVersion: 2
+Bundle-Name: Calculator Extension
+Bundle-SymbolicName: cExtension;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: calculator.CalculatorPlugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: junit.framework,
+ org.eclipse.ui.plugin,
+ org.junit,
+ org.osgi.framework
+Export-Package: calculator;uses:="javax.swing",
+ calculator.tests;uses:="junit.framework,calculator"

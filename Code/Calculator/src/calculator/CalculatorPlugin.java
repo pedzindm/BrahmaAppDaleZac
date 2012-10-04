@@ -3,10 +3,6 @@ package calculator;
 import java.awt.BorderLayout;
 
 import javax.swing.JPanel;
-
-import org.eclipse.ui.plugin.AbstractUIPlugin;
-import org.osgi.framework.BundleContext;
-
 import plugin.Plugin;
 
 /**
