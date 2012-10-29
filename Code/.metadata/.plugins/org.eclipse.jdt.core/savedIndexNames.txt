@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\Users\reynolza\Documents\GitHub\BrahmaAppDaleZac\Code\.metadata\.plugins\org.eclipse.jdt.core
+1393225683.index
+515463390.index
+3133528496.index
